@@ -2,7 +2,7 @@
 
 ### 1. 탐색적 데이터 분석 (Exploratory Data Analysis)?
 
-   데이터 분석 초기에 수행하는 과정으로, 데이터를 다양한 각도에서 관찰하고 이해하는 절차를 **탐색적 데이터 분석(Exploratory Data Analysis, EDA)**이라고 합니다.
+   데이터 분석 초기에 수행하는 과정으로, 데이터를 다양한 각도에서 관찰하고 이해하는 절차를 **탐색적 데이터 분석(Exploratory Data Analysis, EDA)** 이라고 합니다.
    이는 본격적인 분석에 들어가기 전에 데이터를 직관적으로 파악하기 위해 시각화 자료나 기본 통계값(평균, 중앙값 등)을 생성하여 살펴보는 과정입니다.   
    즉, 데이터 수집과 전처리가 끝난 후, 목적에 맞는 분석을 시작하기 전에 그래프, 차트, 요약 통계치 등을 통해 데이터를 한 발짝 떨어져 객관적으로 바라보고, 데이터의 특성과 잠재적인 패턴이나 이상치를 탐색하는 단계라고 할 수 있습니다.   
 
@@ -13,24 +13,16 @@
 
 
 ### 3. 탐색적 데이터 분석의 여러가지 방법
-   - **데이터를 이해하는 기술**
-     - std(), value_counts(), describe() 등의 방법으로 데이터의 구조 및 값 확인
-       
-   - **결측치, 이상치 등을 사용한 필터링 방법**
-     - 결측지 확인
+   - 기술 통계 방법으로 확인
+       - std(), value_counts(), describe() 등의 방법으로 데이터의 구조 및 값 확인
+   - 데이터 시각화로 확인
+       - histplot, boxplot, violinplot, scatterplot, pairplot, heatmap, countplot, barplot 등으로 확인   
+         matplotlib, seaborn, pandas등의 시각화 툴로 확인
+   - 결측치 확인
        ```python
        df.isnull().sum() # 결측지 개수 확인
        df.isnull().mean().sort_values(ascending=False) *100 # 결측지 비율 확인
        ```
-     - 이상치 확인   
-       ex) IQR(boxplot), z-score 등등
-     
-   - **시각화하는 방법**
-     - histplot, boxplot, violinplot, scatterplot, pairplot, heatmap, countplot, barplot 등으로 확인
-       ```python
-       import seaborn as sns
-       import matplotlib.pyplot as plt
-       
-       sns.heatmap(df.isnull(), cbar=False, yticklabels=False)
-       plt.show() # heatmap으로 확인하는 방법
-       ```
+   - 이상치 확인   
+       - IQR, z-score 등등
+   - 중복값 확인
