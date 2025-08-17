@@ -19,10 +19,6 @@
        - histplot, boxplot, violinplot, scatterplot, pairplot, heatmap, countplot, barplot 등으로 확인   
          matplotlib, seaborn, pandas등의 시각화 툴로 확인
    - 결측치 확인
-       ```python
-       df.isnull().sum() # 결측지 개수 확인
-       df.isnull().mean().sort_values(ascending=False) *100 # 결측지 비율 확인
-       ```
    - 이상치 확인   
        - IQR, z-score 등등
    - 중복값 확인
