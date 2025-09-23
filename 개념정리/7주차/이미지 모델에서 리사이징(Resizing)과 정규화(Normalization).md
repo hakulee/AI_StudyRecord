@@ -1,4 +1,4 @@
-# 이미지를 모델에 입력하기 전에 리사이징(Resizing)과 정규화(Normalization)를 하는 이유는?
+## 이미지를 모델에 입력하기 전에 리사이징(Resizing)과 정규화(Normalization)를 하는 이유는?
 우선 리사이징(Resizing)과 정규화(Normalization)는 이미지를 딥러닝 모델에 입력하기 전에 수행하는 대표적인 전처리 과정이다.
 
 ## 리사이징(Resizing)
