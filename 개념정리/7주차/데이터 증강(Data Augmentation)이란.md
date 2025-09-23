@@ -28,6 +28,3 @@
 - Mixup (두 이미지 섞기)
 - CutMix (한 이미지 일부를 다른 이미지에 붙이기)
 ---
-
-
-[출처](https://velog.io/@gyurili/%EB%94%A5%EB%9F%AC%EB%8B%9D-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A6%9D%EA%B0%95Data-Augmentation-%EA%B8%B0%EB%B2%95-%EC%A0%95%EB%A6%AC)
