@@ -86,10 +86,10 @@ Git에서 HEAD는 “현재 작업 중인 버전(커밋)”을 가리키는 특�
 ## 4. Git이 보는 파일의 4가지 상태
 
 ### Git 파일 상태 및 전환 요약
-
 Git으로 관리되는 파일은 항상 **상태(status)**를 가지며, 이는 Git이 파일의 변동사항을 어떻게 추적하는지를 나타냅니다.
 
-![image.png](attachment:96b13f96-c4c7-4333-8929-bdf45eb6d185:image.png)
+<img width="1347" height="824" alt="image" src="https://github.com/user-attachments/assets/7f75b053-c76a-4540-9751-1b887beee45f" />
+
 
 ### 1. 파일의 기본 상태
 
